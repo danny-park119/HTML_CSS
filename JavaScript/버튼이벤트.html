@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .btn {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-title">Event</h1>
+    <button class="btn">클릭하세요!</button>
+    <script>
+        var btn = document.querySelector('.btn');
+        var mainTitle = document.querySelector('#main-title');
+
+        function btnClickHandler() {
+            mainTitle.style.background = 'green';
+        }
+        //btn.onclick = btnClickHandler; 여러개의 속성을 추가 할수있다.
+        // btn.onclick = function()
+        // {
+        //     btnClickHandler();
+        //     btnClickHandler2();
+        //     btnClickHandler3();
+        // }
+        btn.addEventListener('click', btnClickHandler); //가장 추천
+    </script>
+</body>
+
+</html>
