@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Selector Basic</title>
+    <!-- <link rel="stylesheet" href="Color변경.css"> -->
+    <!-- link태그를 이용해서 css스크립트를 불러와서 색을 변경해주는 역할을한다. -->
+    <style>
+        h1 {
+            color: red;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: gray">CSS Selector Basic</h1>
+
+    CSS의 형태
+    어떠한 것 (선택자) {
+    어떠한 속성: 어떤 값;
+    어떠한 속성: 어떤 값;
+    color: red; 형식
+    } <br>
+    * = 전체선택자 (모든것을 선택) <br>
+    h1 = 태그선택자 (여러태그 선택은 ,를 이용)<br>
+    #heading = 아이디 선택자 <br>
+    .Object = 클래스 선택자(클래스 선언시 스페이스바로 띄어서 여럿을 선언하고 .으로 구분지어 불러준다.)
+    <ul>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul> <br>
+    <p>자손은 바로 아래있는것</p>
+    <p>후손은 ul 아래에 잇는 li</p> <br>
+    body li = 후손 선택자
+    body > p = 자손 선택자
+    [title = "test"] = 속성선택자 < title="test"> 로 지정후 불러준다.
+</body>
+
+</html>
